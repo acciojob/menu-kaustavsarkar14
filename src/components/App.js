@@ -93,7 +93,7 @@ function App() {
         {
             filteredData.map(el=>{
                 return (
-                    <div>
+                    <div data-test-id={"menu-item-"+el.category} >
                         <img src={el.img} alt="" />
                         <h3>{el.title}</h3>
                         <p>{el.desc}</p>
