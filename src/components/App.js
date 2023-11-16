@@ -86,10 +86,10 @@ function App() {
   return (
     <div id='main' className='main' >
         <h1>Our Menu</h1>
-        <button onClick={()=>setfilter('')} >All</button>
-        <button onClick={()=>setfilter('breakfast')} >Breakfast</button>
-        <button onClick={()=>setfilter('lunch')} >Lunch</button>
-        <button onClick={()=>setfilter('shakes')} >Shakes</button>
+        <button id='filter-btn-0'  onClick={()=>setfilter('')} >All</button>
+        <button id='filter-btn-1'  onClick={()=>setfilter('breakfast')} >Breakfast</button>
+        <button id='filter-btn-2'  onClick={()=>setfilter('lunch')} >Lunch</button>
+        <button id='filter-btn-3' onClick={()=>setfilter('shakes')} >Shakes</button>
         {
             filteredData.map(el=>{
                 return (
